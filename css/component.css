@@ -18,6 +18,15 @@ body {
     align-items: center;
 }
 
+/* BEM naming convention
+.block {}
+.block__element {}
+.block--modifier {}
+
+see - https://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/
+*/
+
+/* block */
 .qr-component {
     background-color: var(--color-white);
     display: flex;
@@ -30,7 +39,8 @@ body {
     width: min-content;
 }
 
-.qr-text {
+/* block element */
+.qr-component__text {
     display: flex;
     flex-direction: column;
     row-gap: 1rem;
@@ -40,21 +50,24 @@ body {
     min-width: 300px;
 }
 
-.qr-text h3 {
+/* block element */
+.qr-component__text-heading {
     color: var(--color-slate-900);
     font-size: 1.375rem;
     letter-spacing: 0;
     line-height: 120%;
 }
 
-.qr-text p {
+/* block element */
+.qr-component__text-description {
     color: var(--color-slate-500);
     font-size: 0.938rem;
     letter-spacing: 0.013rem;
     line-height: 140%;
 }
 
-.qr-code-image {
+/* block element */
+.qr-component__image {
     border-radius: 10px;
     width: 300px;
 }
