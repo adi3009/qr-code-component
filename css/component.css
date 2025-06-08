@@ -1,4 +1,6 @@
 /* BEM naming convention
+see - https://getbem.com/introduction/
+
 .block {}
 .block__element {}
 .block--modifier {}
@@ -19,6 +21,11 @@ see - https://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-sy
     width: min-content;
 }
 
+/* block modifier */
+.qr-component--dark {
+    background-color: var(--color--black);
+}
+
 /* block element */
 .qr-component__text {
     display: flex;
@@ -28,6 +35,11 @@ see - https://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-sy
     font-family: "Outfit", sans-serif;
     font-optical-sizing: auto;
     min-width: 300px;
+}
+
+/* element modifier */
+.qr-component__text--dark {
+    filter: invert(100%);
 }
 
 /* block element */
